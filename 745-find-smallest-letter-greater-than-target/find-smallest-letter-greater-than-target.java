@@ -3,9 +3,9 @@ class Solution {
 
         int st =0;
         int end=letters.length-1;
-        if(letters[letters.length-1]<=target){
-            return letters[0];
-        }
+        // if(letters[letters.length-1]<=target){
+        //     return letters[0];
+        // }
         while(st<=end){
             int mid=st+(end-st)/2;
              if(letters[mid]<=target){
@@ -14,8 +14,8 @@ class Solution {
                 end=mid-1;
             }
         }
-        return letters[st];
-        // return st<letters.length?letters[st]:letters[0];
+        // return letters[st];
+        return st<letters.length?letters[st]:letters[0];
         
     }
 }
