@@ -14,7 +14,8 @@ class Solution {
                 end=mid-1;
             }
         }
-        return st<letters.length?letters[st]:letters[0];
+        return letters[st];
+        // return st<letters.length?letters[st]:letters[0];
         
     }
 }
